@@ -2,25 +2,25 @@ import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 
 const experiences = [
   {
-    title: 'Immersive data dome',
+    title: 'Deadline theater',
     description:
-      'Spectral timelines, orbiting KPI constellations, and ambient music layers that react to fiscal momentum in real time.',
-    stat: '4.6M live datapoints',
-    accent: 'from-cyber/30 via-transparent to-accent/20',
+      'A cinematic dashboard that stages every tax ritual with parallax status rings, predictive nudges, and team prompts.',
+    stat: '97% on-time filings',
+    accent: 'from-magenta/35 via-transparent to-violet/25',
   },
   {
-    title: 'Holographic team rituals',
+    title: 'Finance war room',
     description:
-      'Weekly compliance standups staged as volumetric rituals with spatial audio cues and adaptive prompts for each region.',
-    stat: '98% ritual adoption',
-    accent: 'from-indigo-400/30 via-transparent to-white/10',
+      'Compliance, MIS, and investor-ready data maps blending holographic surfaces with keyboard-triggered transitions.',
+    stat: '3m closing cycles',
+    accent: 'from-indigo/30 via-transparent to-magenta/20',
   },
   {
-    title: 'Mixed reality filings',
+    title: 'Creator studio pods',
     description:
-      'Physical spaces augmented with tax simulators, projection-mapped workflows, and tactile approvals synced to the cloud.',
-    stat: '12 min global approvals',
-    accent: 'from-emerald-300/30 via-transparent to-amber-200/20',
+      'Immersive playbooks for boutique agencies with tactile approvals, ROI trackers, and white-labeled knowledge bases.',
+    stat: '4.9 satisfaction',
+    accent: 'from-violet/35 via-transparent to-indigo/25',
   },
 ];
 
@@ -71,16 +71,14 @@ function ExperienceCard({ title, description, stat, accent, index }) {
 
       <motion.div
         style={{ rotateX, rotateY, x: translateX, y: translateY }}
-        className="relative flex h-full flex-col gap-6 overflow-hidden rounded-[32px] border border-white/10 bg-white/5 p-8 shadow-[0_40px_80px_-40px_rgba(113,250,202,0.45)] backdrop-blur-xl"
+        className="relative flex h-full flex-col gap-6 overflow-hidden rounded-[32px] border border-white/10 bg-white/5 p-8 shadow-[0_40px_80px_-40px_rgba(201,19,207,0.45)] backdrop-blur-xl"
       >
         <div className="flex items-center justify-between gap-4">
-          <span className="text-xs font-semibold uppercase tracking-[0.4em] text-white/40">
-            Experience
-          </span>
+          <span className="text-xs font-semibold uppercase tracking-[0.4em] text-white/50">Experience</span>
           <motion.span
             animate={{ opacity: [0.45, 0.8, 0.45] }}
             transition={{ repeat: Infinity, duration: 4, ease: 'easeInOut', delay: index * 0.5 }}
-            className="h-2 w-16 rounded-full bg-cyber/40"
+            className="h-2 w-16 rounded-full bg-magenta/40"
           />
         </div>
 
@@ -99,9 +97,9 @@ function ExperienceCard({ title, description, stat, accent, index }) {
           <motion.span
             animate={{ y: [0, -4, 0] }}
             transition={{ repeat: Infinity, duration: 3.8, ease: 'easeInOut', delay: index * 0.4 }}
-            className="font-display text-lg text-cyber"
+            className="font-display text-lg text-white"
           >
-            {stat}
+            <span className="bg-gradient-to-r from-magenta to-indigo bg-clip-text text-transparent">{stat}</span>
           </motion.span>
         </motion.div>
       </motion.div>
@@ -119,15 +117,13 @@ export default function AmbientShowcase() {
         transition={{ duration: 0.9 }}
         className="flex flex-col gap-4"
       >
-        <span className="text-sm font-semibold uppercase tracking-[0.4em] text-white/50">
-          Motion showcase
-        </span>
+        <span className="text-sm font-semibold uppercase tracking-[0.4em] text-white/50">Experience layer</span>
         <h2 className="max-w-3xl font-display text-4xl text-white/90">
-          Spatial experiences that blend physical gestures with luminous tax data.
+          Motion systems inspired by cinematic finance storytelling.
         </h2>
         <p className="max-w-2xl text-base text-white/70">
-          Each environment is choreographed with multi-layered parallax, responsive light, and synesthetic cues that guide teams
-          through complex approvals like a cinematic score.
+          We choreograph parallax surfaces, depth cues, and tactile micro-interactions so compliance feels like an immersive
+          narrative—not a spreadsheet.
         </p>
       </motion.div>
 

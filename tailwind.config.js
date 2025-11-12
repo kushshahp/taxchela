@@ -4,22 +4,24 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
-        display: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
+        sans: ['"Inter"', 'system-ui', 'sans-serif'],
+        display: ['"Oswald"', 'system-ui', 'sans-serif'],
       },
       colors: {
-        midnight: '#04030F',
-        'midnight-100': '#1B1534',
-        'midnight-200': '#282153',
-        cyber: '#71FACA',
-        accent: '#FF7BAC',
+        midnight: '#050314',
+        'midnight-100': '#120a2c',
+        'midnight-200': '#1c1040',
+        magenta: '#C913CF',
+        violet: '#7A22DD',
+        indigo: '#2433EE',
+        blush: '#F3E6FF',
       },
       backgroundImage: {
         'gradient-orbit':
-          'radial-gradient(circle at 20% 20%, rgba(113,250,202,0.3), transparent 40%), radial-gradient(circle at 80% 30%, rgba(255,123,172,0.3), transparent 45%), radial-gradient(circle at 50% 80%, rgba(124,116,255,0.25), transparent 45%)',
+          'radial-gradient(circle at 10% 20%, rgba(201,19,207,0.35), transparent 55%), radial-gradient(circle at 75% 25%, rgba(122,34,221,0.28), transparent 50%), radial-gradient(circle at 50% 80%, rgba(36,51,238,0.32), transparent 55%)',
       },
       boxShadow: {
-        glow: '0 0 60px rgba(113, 250, 202, 0.25)',
+        glow: '0 0 60px rgba(201,19,207,0.25)',
       },
     },
   },
