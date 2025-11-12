@@ -1,13 +1,11 @@
 {
-  "devDependencies": {
-    "@wix/cli": "^1.0.0",
-    "@wix/eslint-plugin-cli": "^1.0.0",
-    "eslint": "^8.25.0",
-    "react": "16.14.0"
-  },
+  "name": "taxchela",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static TaxChela marketing site with CSV-driven content and animations.",
   "scripts": {
-    "postinstall": "wix sync-types",
-    "dev": "wix dev",
-    "lint": "eslint ."
+    "start": "npx serve .",
+    "preview": "npx serve .",
+    "build": "echo 'Static site build complete.'"
   }
 }
