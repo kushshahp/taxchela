@@ -1,45 +1,67 @@
-# Git Integration & Wix CLI <img align="left" src="https://user-images.githubusercontent.com/89579857/185785022-cab37bf5-26be-4f11-85f0-1fac63c07d3b.png">
+# TaxChela Enhanced Website
 
-This repo is part of Git Integration & Wix CLI, a set of tools that allows you to write, test, and publish code for your Wix site locally on your computer. 
+This repository now hosts the static TaxChela experience extracted from the `tccc.zip` archive and enriched with motion design
+and CSV-powered content sections suitable for deployment on Render or any static host.
 
-Connect your site to GitHub, develop in your favorite IDE, test your code in real time, and publish your site from the command line.
+## Project structure
 
-## Set up this repository in your IDE
-This repo is connected to a Wix site. That site tracks this repo's default branch. Any code committed and pushed to that branch from your local IDE appears on the site.
+```
+/
+├── assets/                # Logos, illustrative imagery, icons
+├── css/style.css          # Global styles and animation definitions
+├── data/                  # CSV sources for insights and service catalogue
+├── js/script.js           # Motion, interactions, PapaParse + GSAP wiring
+├── home/, sol/, read/,    # Route folders served directly as static pages
+│   contri/, tc/, pp/
+└── index.html             # Landing page with animated hero experience
+```
 
-Before getting started, make sure you have the following things installed:
-* [Git](https://git-scm.com/download)
-* [Node](https://nodejs.org/en/download/), version 14.8 or later.
-* [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://yarnpkg.com/getting-started/install)
-* An SSH key [added to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+## Local development
 
-To set up your local environment and start coding locally, do the following:
+1. Install a static server if you do not already have one available:
+   ```bash
+   npm install -g serve
+   ```
+2. Launch the server from the project root so CSV files resolve correctly:
+   ```bash
+   serve .
+   ```
+3. Visit the printed localhost URL (typically `http://localhost:3000`).
 
-1. Open your terminal and navigate to where you want to store the repo.
-1. Clone the repo by running `git clone <your-repository-url>`.
-1. Navigate to the repo's directory by running `cd <directory-name>`.
-1. Install the repo's dependencies by running `npm install` or `yarn install`.
-1. Install the Wix CLI by running `npm install -g @wix/cli` or `yarn global add @wix/cli`.  
-   Once you've installed the CLI globally, you can use it with any Wix site's repo.
+The pages are plain HTML, so any alternative static server such as `python -m http.server` works as well.
 
-For more information, see [Setting up Git Integration & Wix CLI](https://support.wix.com/en/article/velo-setting-up-git-integration-wix-cli-beta).
+## Deployment to Render
 
-## Write Velo code in your IDE
-Once your repo is set up, you can write code in it as you would in any other non-Wix project. The repo's file structure matches the [public](https://support.wix.com/en/article/velo-working-with-the-velo-sidebar#public), [backend](https://support.wix.com/en/article/velo-working-with-the-velo-sidebar#backend), and [page code](https://support.wix.com/en/article/velo-working-with-the-velo-sidebar#page-code) sections in Editor X.
+1. Push this repository to GitHub (or your preferred Git provider).
+2. In Render, create a **Static Site**.
+3. Set the build command to `null`/empty and the publish directory to `/` (root).
+4. Enable auto-deploys so every push redeploys the latest assets.
 
-Learn more about [this repo's file structure](https://support.wix.com/en/article/velo-understanding-your-sites-github-repository-beta).
+Render will serve the site exactly as-is. Because there is no build step, deploys are near instantaneous.
 
-## Test your code with the Local Editor
-The Local Editor allows you test changes made to your site in real time. The code in your local IDE is synced with the Local Editor, so you can test your changes before committing them to your repo. You can also change the site design in the Local Editor and sync it with your IDE.
+## Creating the distributable archive
 
-Start the Local Editor by navigating to this repo's directory in your terminal and running `wix dev`.
+Some platforms reject pull requests that contain binary assets such as `.zip` archives. To avoid those
+limits while still producing the requested `TaxChela_Enhanced_Website.zip`, generate the bundle locally
+whenever you need to share or upload it:
 
-For more information, see [Working with the Local Editor](https://support.wix.com/en/article/velo-working-with-the-local-editor-beta).
+```bash
+zip -r TaxChela_Enhanced_Website.zip \
+  assets contri css data home js pp read sol tc index.html README.md
+```
 
-## Preview and publish with the Wix CLI
-The Wix CLI is a tool that allows you to work with your site locally from your computer's terminal. You can use it to build a preview version of your site and publish it. You can also use the CLI to install [approved npm packages](https://support.wix.com/en/article/velo-working-with-npm-packages) to your site.
+The command mirrors the earlier packaged archive and can be run after every update. Add the resulting
+file to releases or deployment portals as required, but keep it out of git commits to preserve PR compatibility.
 
-Learn more about [working with the Wix CLI](https://support.wix.com/en/article/velo-working-with-the-wix-cli-beta).
+## Managing CSV-powered content
 
-## Invite contributors to work with you
-Git Integration & Wix CLI extends Editor X's [concurrent editing](https://support.wix.com/en/article/editor-x-about-concurrent-editing) capabilities. Invite other developers as collaborators on your [site](https://support.wix.com/en/article/inviting-people-to-contribute-to-your-site) and your [GitHub repo](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository). Multiple developers can work on a site's code at once.
+- `/data/blogs.csv` feeds the Insights grid on `/read`.
+- `/data/products.csv` and `/data/categories.csv` feed the Solutions catalogue on `/sol`.
+
+To update content:
+
+1. Edit the relevant CSV file(s) with your new records.
+2. Commit and push the changes.
+3. The next Render deploy (automatic if enabled) will serve the updated entries without touching HTML.
+
+Ensure the site is always served from a web server (local or hosted) so the fetch requests for CSV files succeed.
