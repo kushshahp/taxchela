@@ -1,6 +1,10 @@
-# dependencies
-node_modules/
-.vscode/
-.idea/
-.wix/
-jsconfig.json
+node_modules
+.DS_Store
+dist
+.env
+.idea
+.vscode
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
