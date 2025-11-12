@@ -18,17 +18,19 @@ and CSV-powered content sections suitable for deployment on Render or any static
 
 ## Local development
 
-1. Install a static server if you do not already have one available:
+1. Install dependencies (there are no packages to download, but this step ensures `npm` knows about the project scripts):
    ```bash
-   npm install -g serve
+   npm install
    ```
-2. Launch the server from the project root so CSV files resolve correctly:
+2. Launch the bundled static server helper:
    ```bash
-   serve .
+   npm start
    ```
+   The command proxies to `npx serve .` so you do not need a global install.
 3. Visit the printed localhost URL (typically `http://localhost:3000`).
 
-The pages are plain HTML, so any alternative static server such as `python -m http.server` works as well.
+If you prefer another tooling option, any static server such as `python -m http.server` still works; just make
+sure you start it from the project root so the CSV fetches resolve correctly.
 
 ## Deployment to Render
 

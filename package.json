@@ -1,0 +1,10 @@
+{
+  "name": "taxchela-static",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static TaxChela marketing site with CSV-driven content and animations.",
+  "scripts": {
+    "start": "npx serve .",
+    "preview": "npx serve ."
+  }
+}
