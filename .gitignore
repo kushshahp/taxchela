@@ -19,6 +19,13 @@ TaxChela_Enhanced_Website.zip
 
 # env & logs
 .env
+node_modules
+.DS_Store
+dist
+.wix
+.env
+.idea
+.vscode
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
