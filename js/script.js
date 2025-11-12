@@ -61,6 +61,18 @@
     requestAnimationFrame(() => logo.classList.add('glow'));
   };
 
+  const revealHeroWatermark = () => {
+    const watermark = document.querySelector('.hero-watermark');
+    if (!watermark) return;
+    if (isReducedMotion) {
+      watermark.classList.add('visible');
+      return;
+    }
+    requestAnimationFrame(() => {
+      setTimeout(() => watermark.classList.add('visible'), 120);
+    });
+  };
+
   const animateCounters = () => {
     if (isReducedMotion) return;
     const counters = document.querySelectorAll('[data-counter]');
@@ -128,9 +140,14 @@
       return;
     }
 
-    gsap.registerPlugin(ScrollTrigger);
+    if (!initScrollAnimations.initialised) {
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.defaults({ ease: 'power2.out', duration: 1.05 });
+      initScrollAnimations.initialised = true;
+    }
 
     document.querySelectorAll('[data-animate]').forEach((element) => {
+      if (element.dataset.motionReady === 'true') return;
       const animation = element.dataset.animate;
       const config = {
         opacity: 0,
@@ -147,8 +164,7 @@
         {
           opacity: 1,
           y: 0,
-          ease: 'power3.out',
-          duration: 0.9,
+          duration: element.dataset.duration ? Number(element.dataset.duration) : 1.05,
           delay: element.dataset.delay ? Number(element.dataset.delay) : 0,
           scrollTrigger: {
             trigger: element,
@@ -157,7 +173,12 @@
           },
         }
       );
+      element.dataset.motionReady = 'true';
     });
+
+    if (initScrollAnimations.initialised && window.ScrollTrigger) {
+      window.ScrollTrigger.refresh();
+    }
   };
 
   const ensurePapa = async () => {
@@ -344,6 +365,7 @@
     initNavigation();
     initSmoothScroll();
     pulseLogo();
+    revealHeroWatermark();
     animateCounters();
     initScrollAnimations();
     loadBlogs();

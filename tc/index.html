@@ -15,22 +15,14 @@
   <body class="legal">
     <header class="site-header">
       <div class="container">
-        <a href="/index.html" class="brand">
-          <div class="brand-logo hero-logo">
-            <svg viewBox="0 0 64 64" aria-hidden="true">
-              <defs>
-                <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#c913cf" />
-                  <stop offset="50%" stop-color="#522ae5" />
-                  <stop offset="100%" stop-color="#2433ee" />
-                </linearGradient>
-              </defs>
-              <path
-                fill="url(#logoGradient)"
-                d="M32 6c14.4 0 26 11.6 26 26S46.4 58 32 58 6 46.4 6 32 17.6 6 32 6zm0 9c-9.4 0-17 7.6-17 17s7.6 17 17 17 17-7.6 17-17S41.4 15 32 15zm0 9.6c4 0 7.4 3.4 7.4 7.4S36 39.4 32 39.4 24.6 36 24.6 32 28 24.6 32 24.6z"
-              />
-            </svg>
-          </div>
+        <a href="/index.html" class="brand" aria-label="TaxChela home">
+          <img
+            class="brand-logo hero-logo"
+            src="/assets/img/taxchela-logo-mark.svg"
+            alt="TaxChela logo"
+            width="48"
+            height="48"
+          />
           <span class="brand-wordmark">TaxChela</span>
         </a>
         <nav aria-label="Primary navigation">
@@ -84,7 +76,18 @@
     </main>
     <footer class="site-footer">
       <div class="footer-wave"></div>
-      <div class="container footer-content">
+      <div class="container footer-content footer-legal">
+        <a href="/index.html" class="brand brand-inline" aria-label="Back to TaxChela home">
+          <img
+            class="brand-logo small"
+            src="/assets/img/taxchela-logo-mark.svg"
+            alt="TaxChela logo"
+            width="40"
+            height="40"
+            loading="lazy"
+          />
+          <span class="brand-wordmark">TaxChela</span>
+        </a>
         <p>&copy; TaxChela. All rights reserved.</p>
         <nav>
           <ul>
@@ -94,9 +97,6 @@
         </nav>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js" defer></script>
     <script src="/js/script.js" defer></script>
   </body>
 </html>

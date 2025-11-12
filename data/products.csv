@@ -1,10 +1,11 @@
 service_name,description,price,category
-Incorporation launchpad,Register your entity with MCA filings, PAN/TAN, and GST from one guided workflow,25000,Founders & Startups
-Compliance pod Lite,Monthly bookkeeping with GST and TDS filings handled by a dedicated squad,18000,Founders & Startups
-ESOP studio,Design, rollout, and compliance management for ESOP programs including Form SH-6,42000,Founders & Startups
-Growth CFO desk,Scenario planning, MIS review, and board reporting with compliance insights,65000,Established Businesses
-Payroll shield,Payroll processing with PF/ESI/Professional Tax compliance and payslip automation,32000,Established Businesses
-ROC governance,Annual filing calendar with auto-prepared AOC-4, MGT-7, and secretarial records,27000,Established Businesses
-Creator tax pod,Quarterly GST, advance tax, and expense categorisation for creators and consultants,16000,Creators & Consultants
-Invoice orchestrator,Template automation with reverse charge and cross-border invoice compliance,19000,Creators & Consultants
-IP & licensing guard,DPIIT recognition support and royalty compliance monitoring,24000,Creators & Consultants
+Launch compliance cockpit,"Incorporation, bank account setup, GST, and state registrations orchestrated via one dashboard.",26000,Founders & Startups
+Fractional compliance pod,"Weekly bookkeeping with GST/TDS filings, ROC tracking, and CFO check-ins.",19500,Founders & Startups
+ESOP blueprint studio,"Plan, approve, and maintain ESOP schemes with SH-6, SH-8, and Form PAS-3 automation.",44000,Founders & Startups
+Scale CFO desk,"Scenario modelling, MIS synthesis, and board reporting with compliance risk surfacing.",69000,Established Businesses
+People ops shield,"Payroll, PF/ESI/PT compliance, and employee onboarding analytics with anomaly flags.",33000,Established Businesses
+ROC command centre,"Calendarised AOC-4, MGT-7, and secretarial documentation with e-sign orchestration.",28500,Established Businesses
+Creator tax pod,"Quarterly GST, advance tax, and expense classification tailored for digital-first creators.",17500,Creators & Consultants
+Global invoicing guard,"Cross-border contracts, LUT renewals, and FEMA compliance mapped with alerts.",21500,Creators & Consultants
+IP and licensing desk,"DPIIT recognition, royalty tracking, and trademark monitoring with audit-ready trails.",25500,Creators & Consultants
+Virtual compliance academy,"Workshops and micro-courses for founders and finance teams with certification flows.",12000,Creators & Consultants
