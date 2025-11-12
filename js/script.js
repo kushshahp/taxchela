@@ -187,7 +187,6 @@
       image.loading = 'lazy';
       image.alt = entry.title ? `${entry.title} thumbnail` : 'Blog thumbnail';
       image.src = entry.image || '/assets/img/blog-placeholder.svg';
-      image.src = entry.image || '/assets/img/blog-placeholder.jpg';
       imageWrapper.appendChild(image);
 
       const category = document.createElement('span');
