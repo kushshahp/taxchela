@@ -36,6 +36,13 @@ sure you start it from the project root so the CSV fetches resolve correctly.
 
 1. Push this repository to GitHub (or your preferred Git provider).
 2. In Render, create a **Static Site**.
+3. Set the build command to either `npm run build` (Render's default) or leave it empty — both succeed because the
+   repository now ships with a no-op `build` script that simply prints `Static site build complete.`
+4. Set the publish directory to `/` (root).
+5. Enable auto-deploys so every push redeploys the latest assets.
+
+Render will serve the site exactly as-is. Because the build step is intentionally lightweight, deploys are effectively
+instantaneous even when Render executes `npm run build`.
 3. Set the build command to `null`/empty and the publish directory to `/` (root).
 4. Enable auto-deploys so every push redeploys the latest assets.
 
