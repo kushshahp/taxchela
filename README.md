@@ -43,6 +43,23 @@ sure you start it from the project root so the CSV fetches resolve correctly.
 
 Render will serve the site exactly as-is. Because the build step is intentionally lightweight, deploys are effectively
 instantaneous even when Render executes `npm run build`.
+
+## Creating the distributable archive
+
+Some platforms reject pull requests that contain binary assets such as `.zip` archives. To avoid those
+limits while still producing the requested `TaxChela_Enhanced_Website.zip`, generate the bundle locally
+whenever you need to share or upload it:
+
+```bash
+zip -r TaxChela_Enhanced_Website.zip \
+  assets contri css data home js pp read sol tc index.html README.md
+```
+
+The command mirrors the earlier packaged archive and can be run after every update. Add the resulting
+file to releases or deployment portals as required, but keep it out of git commits to preserve PR compatibility.
+
+## Managing CSV-powered content
+
 3. Set the build command to `null`/empty and the publish directory to `/` (root).
 4. Enable auto-deploys so every push redeploys the latest assets.
 
