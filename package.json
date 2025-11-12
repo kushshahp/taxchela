@@ -5,7 +5,7 @@
   "description": "Static TaxChela marketing site with CSV-driven content and animations.",
   "scripts": {
     "start": "npx serve .",
-    "preview": "npx serve .",
+    "preview": "node scripts/preview-server.mjs",
     "build": "node -e \"console.log('Static site build complete.')\""
   }
 }
