@@ -3,15 +3,15 @@ import { motion } from 'framer-motion';
 const footerLinks = [
   {
     title: 'Studios',
-    items: ['Los Angeles', 'Singapore', 'Berlin'],
+    items: ['Bengaluru', 'Mumbai', 'Remote-first'],
   },
   {
     title: 'Specialties',
-    items: ['Motion Systems', 'Compliance AI', 'CX Automation'],
+    items: ['Compliance Pods', 'Automation Design', 'Tax Intelligence'],
   },
   {
-    title: 'Connect',
-    items: ['LinkedIn', 'Dribbble', 'Behance'],
+    title: 'Resources',
+    items: ['Solutions', 'Insights', 'Contact'],
   },
 ];
 
@@ -27,11 +27,13 @@ export default function SiteFooter() {
           transition={{ duration: 0.8 }}
           className="flex max-w-md flex-col gap-4"
         >
-          <span className="font-display text-2xl text-white">Taxchela Studio</span>
+          <a href="#vision" className="flex items-center gap-3 text-white">
+            <img src="/assets/img/taxchela-logo-horizontal.svg" alt="TaxChela" className="h-8 w-auto" />
+          </a>
           <p className="text-sm text-white/60">
-            We craft animated fiscal universes for teams who want to fall in love with compliance.
+            We build calm, animated compliance journeys for founders, finance leaders, and creator studios across India.
           </p>
-          <span className="text-xs uppercase tracking-[0.4em] text-white/40">© {new Date().getFullYear()} Taxchela. All rights reserved.</span>
+          <span className="text-xs uppercase tracking-[0.4em] text-white/40">© {new Date().getFullYear()} TaxChela. All rights reserved.</span>
         </motion.div>
 
         <div className="grid grid-cols-2 gap-8 text-sm text-white/60 sm:grid-cols-3">
@@ -48,7 +50,7 @@ export default function SiteFooter() {
               <ul className="flex flex-col gap-2">
                 {group.items.map((item) => (
                   <li key={item}>
-                    <a href="#" className="transition-colors duration-300 hover:text-cyber">
+                    <a href={item === 'Solutions' ? '#solutions' : item === 'Insights' ? '#insights' : item === 'Contact' ? '#contact' : '#'} className="transition-colors duration-300 hover:text-magenta">
                       {item}
                     </a>
                   </li>

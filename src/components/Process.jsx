@@ -2,24 +2,24 @@ import { motion } from 'framer-motion';
 
 const steps = [
   {
-    title: 'Exploration orbit',
+    title: 'Discovery orbit',
     description:
-      'We choreograph interactive discovery sessions, turning audit pain points into motion concepts & prototype blueprints.',
+      'Map every filing, tool, and stakeholder. We benchmark existing rituals and gather artefacts for automation.',
   },
   {
-    title: 'Cinematic systems',
+    title: 'System choreography',
     description:
-      'Designers, technologists, and fiscal strategists craft living design systems with adaptive animations baked in.',
+      'Design automation playbooks with Oswald-led UI, workflows, and alerts tuned to your industry cadence.',
   },
   {
     title: 'Launch theatre',
     description:
-      'We orchestrate rollouts with premiere-style premieres, telemetry dashboards, and global enablement rituals.',
+      'Roll out pods with guided training, review checkpoints, and cinematic dashboards hosted on Render.',
   },
   {
     title: 'Growth harmonics',
     description:
-      'Taxchela’s team monitors adoption, trains your crew, and evolves experiences with every policy update.',
+      'Monthly retros layer new regulations, investor asks, and product updates without breaking momentum.',
   },
 ];
 
@@ -33,16 +33,14 @@ export default function Process() {
         transition={{ duration: 0.8 }}
         className="flex flex-col gap-4"
       >
-        <span className="text-sm font-semibold uppercase tracking-[0.4em] text-white/50">
-          Method
-        </span>
+        <span className="text-sm font-semibold uppercase tracking-[0.4em] text-white/50">Method</span>
         <h2 className="max-w-3xl font-display text-4xl text-white/90">
           A motion-first process tuned to regulated teams.
         </h2>
       </motion.div>
 
       <div className="relative">
-        <div className="absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-gradient-to-b from-cyber/0 via-cyber/60 to-transparent lg:block" />
+        <div className="absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-gradient-to-b from-magenta/0 via-magenta/50 to-transparent lg:block" />
         <div className="flex flex-col gap-12">
           {steps.map((step, index) => (
             <motion.article
@@ -53,10 +51,8 @@ export default function Process() {
               transition={{ duration: 0.8, delay: index * 0.05, ease: [0.16, 1, 0.3, 1] }}
               className={`glass-panel relative rounded-3xl p-8 lg:w-1/2 ${index % 2 === 0 ? 'lg:ml-auto lg:pl-16' : 'lg:mr-auto lg:pr-16'}`}
             >
-              <div className="pointer-events-none absolute -top-12 left-6 hidden h-24 w-24 -translate-x-1/2 rounded-full bg-cyber/30 blur-3xl lg:block" />
-              <span className="text-sm font-semibold uppercase tracking-[0.4em] text-white/40">
-                {`0${index + 1}`}
-              </span>
+              <div className="pointer-events-none absolute -top-12 left-6 hidden h-24 w-24 -translate-x-1/2 rounded-full bg-magenta/30 blur-3xl lg:block" />
+              <span className="text-sm font-semibold uppercase tracking-[0.4em] text-white/40">{`0${index + 1}`}</span>
               <h3 className="mt-3 font-display text-2xl text-white">{step.title}</h3>
               <p className="mt-4 text-sm leading-relaxed text-white/70">{step.description}</p>
             </motion.article>

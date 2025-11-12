@@ -2,11 +2,11 @@ import { motion, useAnimationControls } from 'framer-motion';
 import { useEffect } from 'react';
 
 const metrics = [
-  { label: 'Average ROI lift', value: '+184%' },
-  { label: 'Workflow latency drop', value: '-63%' },
-  { label: 'Interactive tax models shipped', value: '127' },
-  { label: 'Countries automated', value: '19' },
-  { label: 'Compliance automations', value: '400+' },
+  { label: 'Filings orchestrated', value: '18,240+' },
+  { label: 'Turnaround acceleration', value: '3.4x' },
+  { label: 'Compliance score uplift', value: '+42 pts' },
+  { label: 'Finance tools integrated', value: '58' },
+  { label: 'Customer satisfaction', value: '4.9/5' },
 ];
 
 export default function MetricsMarquee() {
@@ -28,12 +28,14 @@ export default function MetricsMarquee() {
         {[...metrics, ...metrics].map((metric, index) => (
           <div
             key={`${metric.label}-${index}`}
-            className="mx-8 flex min-w-[220px] flex-col items-center gap-2 rounded-3xl border border-white/10 bg-white/5 px-8 py-6 text-center shadow-lg shadow-cyber/10"
+            className="mx-8 flex min-w-[240px] flex-col items-center gap-2 rounded-3xl border border-white/10 bg-white/5 px-8 py-6 text-center shadow-lg shadow-magenta/10"
           >
-            <span className="text-sm uppercase tracking-[0.4em] text-white/40">
-              {metric.label}
+            <span className="text-xs uppercase tracking-[0.35em] text-white/50">{metric.label}</span>
+            <span className="font-display text-3xl text-white">
+              <span className="bg-gradient-to-r from-magenta via-violet to-indigo bg-clip-text text-transparent">
+                {metric.value}
+              </span>
             </span>
-            <span className="font-display text-3xl text-cyber">{metric.value}</span>
           </div>
         ))}
       </motion.div>

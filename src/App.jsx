@@ -1,10 +1,11 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Hero from './components/Hero.jsx';
 import MetricsMarquee from './components/MetricsMarquee.jsx';
-import Services from './components/Services.jsx';
+import Solutions from './components/Solutions.jsx';
 import AmbientShowcase from './components/AmbientShowcase.jsx';
 import CaseStudies from './components/CaseStudies.jsx';
 import Process from './components/Process.jsx';
+import Insights from './components/Insights.jsx';
 import Testimonials from './components/Testimonials.jsx';
 import ContactCta from './components/ContactCta.jsx';
 import SiteHeader from './components/SiteHeader.jsx';
@@ -27,7 +28,7 @@ const orbitalVariant = {
 
 export default function App() {
   const { scrollYProgress } = useScroll();
-  const backgroundShift = useTransform(scrollYProgress, [0, 1], [0, -300]);
+  const backgroundShift = useTransform(scrollYProgress, [0, 1], [0, -260]);
   const layerTransforms = [
     useTransform(scrollYProgress, [0, 1], [0, -120]),
     useTransform(scrollYProgress, [0, 1], [0, -200]),
@@ -52,7 +53,7 @@ export default function App() {
         {parallaxLayers.map((layer, index) => (
           <motion.div
             key={layer.id}
-            className={`absolute inset-10 rounded-full bg-gradient-to-br from-cyber/20 via-transparent to-accent/20 ${layer.blur} ${layer.opacity}`}
+            className={`absolute inset-10 rounded-full bg-gradient-to-br from-magenta/20 via-transparent to-indigo/20 ${layer.blur} ${layer.opacity}`}
             style={{
               scale: 1 + index * 0.1,
               y: layerTransforms[index],
@@ -67,10 +68,11 @@ export default function App() {
       <main className="relative mx-auto flex w-full max-w-6xl flex-col gap-32 px-6 pb-32 pt-28 md:gap-40 md:px-10 lg:px-16">
         <Hero />
         <MetricsMarquee />
-        <Services />
+        <Solutions />
         <AmbientShowcase />
         <CaseStudies />
         <Process />
+        <Insights />
         <Testimonials />
         <ContactCta />
       </main>

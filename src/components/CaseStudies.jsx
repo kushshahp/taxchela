@@ -2,22 +2,22 @@ import { motion } from 'framer-motion';
 
 const studies = [
   {
-    client: 'Affinity Global',
-    outcome: 'Launched a holographic tax concierge with 92% completion rate.',
-    impact: 'Generated $32M pipeline in the first 45 days.',
-    gradient: 'from-cyber/20 via-transparent to-accent/20',
+    client: 'NovaKart',
+    outcome: 'Scaled from 3 to 11 states with a unified GST + ROC command centre.',
+    impact: 'Reduced compliance escalations by 74% in the first quarter.',
+    gradient: 'from-magenta/25 via-transparent to-indigo/25',
   },
   {
-    client: 'NovaLedger',
-    outcome: 'Built a narrative-driven compliance journey across 19 regions.',
-    impact: 'Cut onboarding time from 18 days to 3 hours.',
-    gradient: 'from-indigo-400/20 via-transparent to-sky-400/20',
+    client: 'LedgerLoop',
+    outcome: 'Launched investor-grade MIS with automated MCA and tax rituals.',
+    impact: 'Cut board-report preparation from 10 days to 12 hours.',
+    gradient: 'from-violet/25 via-transparent to-magenta/20',
   },
   {
-    client: 'Harmonia Capital',
-    outcome: 'Deployed adaptive tax simulations for hybrid workforce teams.',
-    impact: 'Reduced filing escalations by 74% quarter over quarter.',
-    gradient: 'from-emerald-300/20 via-transparent to-amber-200/20',
+    client: 'CollabHQ',
+    outcome: 'Built creator-first payroll compliance with adaptive nudges.',
+    impact: 'Achieved 98% payroll accuracy and 3.1x faster filings.',
+    gradient: 'from-indigo/25 via-transparent to-violet/25',
   },
 ];
 
@@ -31,11 +31,9 @@ export default function CaseStudies() {
         transition={{ duration: 0.8 }}
         className="flex flex-col gap-4"
       >
-        <span className="text-sm font-semibold uppercase tracking-[0.4em] text-white/50">
-          Selected work
-        </span>
+        <span className="text-sm font-semibold uppercase tracking-[0.4em] text-white/50">Case studies</span>
         <h2 className="max-w-3xl font-display text-4xl text-white/90">
-          Immersive launches that rewire how teams experience finance.
+          Transforming compliance into product-grade experiences.
         </h2>
       </motion.div>
 
@@ -53,9 +51,7 @@ export default function CaseStudies() {
               className={`pointer-events-none absolute -inset-2 rounded-[32px] bg-gradient-to-br ${study.gradient} opacity-70 blur-3xl`}
             />
             <div className="relative flex flex-col gap-4">
-              <span className="text-xs uppercase tracking-[0.4em] text-white/50">
-                {study.client}
-              </span>
+              <span className="text-xs uppercase tracking-[0.4em] text-white/50">{study.client}</span>
               <p className="font-display text-xl text-white/90">{study.outcome}</p>
               <p className="text-sm text-white/70">{study.impact}</p>
             </div>
@@ -73,7 +69,7 @@ export default function CaseStudies() {
               <motion.div
                 animate={{ rotate: -360 }}
                 transition={{ repeat: Infinity, duration: 18, ease: 'linear' }}
-                className="absolute right-0 top-0 h-32 w-32 translate-x-1/3 -translate-y-1/3 rounded-full bg-cyber/30 blur-3xl"
+                className="absolute right-0 top-0 h-32 w-32 translate-x-1/3 -translate-y-1/3 rounded-full bg-magenta/30 blur-3xl"
               />
             </motion.div>
           </motion.article>

@@ -3,21 +3,21 @@ import { motion } from 'framer-motion';
 const testimonials = [
   {
     quote:
-      'Taxchela transformed our compliance portal into a cinematic journey. Our clients now rave about filing taxes.',
-    author: 'Elaine Porter',
-    role: 'Chief Product Officer, Affinity Global',
+      'TaxChela wrapped our compliance stack in a cinematic interface. Our founders finally understand every deadline without asking.',
+    author: 'Meera Singh',
+    role: 'COO, NovaKart',
   },
   {
     quote:
-      'Every interaction feels alive. The studio’s attention to animation systems made adoption effortless across 19 regions.',
-    author: 'Jules Onagawa',
-    role: 'VP Transformation, NovaLedger',
+      'Automation is built-in, but it never feels robotic. Their Oswald-first design language keeps the experience premium for our clients.',
+    author: 'Arjun Patel',
+    role: 'Founder, LedgerLoop',
   },
   {
     quote:
-      'We expected a dashboard. Taxchela delivered a financial universe with precision telemetry and playful storytelling.',
-    author: 'Santiago Vega',
-    role: 'Head of Operations, Harmonia Capital',
+      'From payroll to GST, everything is orchestrated. TaxChela’s pods respond within minutes and surface the right narratives for leadership.',
+    author: 'Sanya Kapoor',
+    role: 'People Lead, CollabHQ',
   },
 ];
 
@@ -31,11 +31,9 @@ export default function Testimonials() {
         transition={{ duration: 0.8 }}
         className="flex flex-col gap-4"
       >
-        <span className="text-sm font-semibold uppercase tracking-[0.4em] text-white/50">
-          Voices
-        </span>
+        <span className="text-sm font-semibold uppercase tracking-[0.4em] text-white/50">Voices</span>
         <h2 className="max-w-3xl font-display text-4xl text-white/90">
-          Teams that orbit Taxchela share the experience.
+          Teams that orbit TaxChela share the experience.
         </h2>
       </motion.div>
 
