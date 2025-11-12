@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c913cf" />
+      <stop offset="50%" stop-color="#522ae5" />
+      <stop offset="100%" stop-color="#2433ee" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="280" fill="url(#grad)" rx="32" />
+  <g fill="#ffffff" opacity="0.82">
+    <text x="40" y="140" font-family="'Oswald', sans-serif" font-size="42" letter-spacing="6">TAXCHELA</text>
+    <text x="40" y="190" font-family="'Inter', sans-serif" font-size="20" opacity="0.7">INSIGHT SNAPSHOT</text>
+  </g>
+</svg>
