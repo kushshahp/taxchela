@@ -41,5 +41,9 @@ The Wix CLI is a tool that allows you to work with your site locally from your c
 
 Learn more about [working with the Wix CLI](https://support.wix.com/en/article/velo-working-with-the-wix-cli-beta).
 
+## Running this project on Render
+
+Because this repository is tied directly to a Wix site, it relies on the Wix Local Editor runtime that `wix dev` spins up. That workflow requires an interactive browser session and Wix authentication, so it cannot run headlessly on Render or other third-party hosts. Instead, develop locally with `npm run dev` and publish through Wix. If you need more detail, see [docs/render-deployment.md](docs/render-deployment.md) for an explanation of the limitations and alternative approaches.
+
 ## Invite contributors to work with you
 Git Integration & Wix CLI extends Editor X's [concurrent editing](https://support.wix.com/en/article/editor-x-about-concurrent-editing) capabilities. Invite other developers as collaborators on your [site](https://support.wix.com/en/article/inviting-people-to-contribute-to-your-site) and your [GitHub repo](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository). Multiple developers can work on a site's code at once.
