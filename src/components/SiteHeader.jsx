@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { BoltIcon } from '@heroicons/react/24/solid';
+import { Zap } from 'lucide-react';
 
 const navItems = [
   { label: 'Vision', href: '#vision' },
@@ -21,7 +21,7 @@ export default function SiteHeader() {
         <a href="#top" className="flex items-center gap-2 font-display text-lg font-semibold tracking-tight">
           <span className="relative flex h-9 w-9 items-center justify-center">
             <span className="absolute inset-0 rounded-full bg-cyber/40 blur-md" />
-            <BoltIcon className="relative h-5 w-5 text-cyber" />
+            <Zap className="relative h-5 w-5 text-cyber" />
           </span>
           Taxchela Studio
         </a>

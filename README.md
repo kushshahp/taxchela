@@ -38,7 +38,7 @@ Alternatively, you can deploy as a **Static Site** on Render using `npm run buil
 
 ## Design system
 
-- **Animations**: Driven by Framer Motion with custom easing, parallax layers, and continuous marquee effects.
+- **Animations**: Driven by Framer Motion with custom easing, parallax layers, tilt-reactive galleries, and continuous marquee effects.
 - **Styling**: Tailwind CSS with bespoke gradients, glass panels, and motion-friendly typography.
 - **Components**: Modular hero, services, case studies, process timeline, testimonials, and contact CTA sections.
 

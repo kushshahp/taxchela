@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import Hero from './components/Hero.jsx';
 import MetricsMarquee from './components/MetricsMarquee.jsx';
 import Services from './components/Services.jsx';
+import AmbientShowcase from './components/AmbientShowcase.jsx';
 import CaseStudies from './components/CaseStudies.jsx';
 import Process from './components/Process.jsx';
 import Testimonials from './components/Testimonials.jsx';
@@ -67,6 +68,7 @@ export default function App() {
         <Hero />
         <MetricsMarquee />
         <Services />
+        <AmbientShowcase />
         <CaseStudies />
         <Process />
         <Testimonials />
