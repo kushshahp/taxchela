@@ -5,19 +5,19 @@ const studies = [
     client: 'Affinity Global',
     outcome: 'Launched a holographic tax concierge with 92% completion rate.',
     impact: 'Generated $32M pipeline in the first 45 days.',
-    gradient: 'from-cyber/20 via-transparent to-accent/20',
+    gradient: 'from-brand-magenta/25 via-transparent to-brand-purple/20',
   },
   {
     client: 'NovaLedger',
     outcome: 'Built a narrative-driven compliance journey across 19 regions.',
     impact: 'Cut onboarding time from 18 days to 3 hours.',
-    gradient: 'from-indigo-400/20 via-transparent to-sky-400/20',
+    gradient: 'from-brand-indigo/25 via-transparent to-brand-iris/20',
   },
   {
     client: 'Harmonia Capital',
     outcome: 'Deployed adaptive tax simulations for hybrid workforce teams.',
     impact: 'Reduced filing escalations by 74% quarter over quarter.',
-    gradient: 'from-emerald-300/20 via-transparent to-amber-200/20',
+    gradient: 'from-brand-purple/25 via-transparent to-brand-magenta/20',
   },
 ];
 
@@ -73,7 +73,7 @@ export default function CaseStudies() {
               <motion.div
                 animate={{ rotate: -360 }}
                 transition={{ repeat: Infinity, duration: 18, ease: 'linear' }}
-                className="absolute right-0 top-0 h-32 w-32 translate-x-1/3 -translate-y-1/3 rounded-full bg-cyber/30 blur-3xl"
+                className="absolute right-0 top-0 h-32 w-32 translate-x-1/3 -translate-y-1/3 rounded-full bg-brand-magenta/30 blur-3xl"
               />
             </motion.div>
           </motion.article>

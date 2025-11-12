@@ -20,8 +20,8 @@ export default function SiteHeader() {
       >
         <a href="#top" className="flex items-center gap-2 font-display text-lg font-semibold tracking-tight">
           <span className="relative flex h-9 w-9 items-center justify-center">
-            <span className="absolute inset-0 rounded-full bg-cyber/40 blur-md" />
-            <Zap className="relative h-5 w-5 text-cyber" />
+            <span className="absolute inset-0 rounded-full bg-brand-magenta/40 blur-md" />
+            <Zap className="relative h-5 w-5 text-brand-iris" />
           </span>
           Taxchela Studio
         </a>
@@ -31,7 +31,7 @@ export default function SiteHeader() {
             <motion.a
               key={item.href}
               href={item.href}
-              whileHover={{ scale: 1.06, color: '#71FACA' }}
+              whileHover={{ scale: 1.06, color: '#c913cf' }}
               className="transition-colors duration-300"
             >
               {item.label}
@@ -43,7 +43,7 @@ export default function SiteHeader() {
           href="#contact"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.98 }}
-          className="hidden rounded-full bg-cyber px-5 py-2 text-sm font-semibold text-midnight shadow-glow sm:block"
+          className="hidden rounded-full bg-brand-magenta px-5 py-2 text-sm font-semibold text-midnight shadow-glow sm:block"
         >
           Launch Project
         </motion.a>

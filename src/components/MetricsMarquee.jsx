@@ -28,12 +28,12 @@ export default function MetricsMarquee() {
         {[...metrics, ...metrics].map((metric, index) => (
           <div
             key={`${metric.label}-${index}`}
-            className="mx-8 flex min-w-[220px] flex-col items-center gap-2 rounded-3xl border border-white/10 bg-white/5 px-8 py-6 text-center shadow-lg shadow-cyber/10"
+            className="mx-8 flex min-w-[220px] flex-col items-center gap-2 rounded-3xl border border-white/10 bg-white/5 px-8 py-6 text-center shadow-lg shadow-brand-magenta/20"
           >
             <span className="text-sm uppercase tracking-[0.4em] text-white/40">
               {metric.label}
             </span>
-            <span className="font-display text-3xl text-cyber">{metric.value}</span>
+            <span className="font-display text-3xl text-brand-magenta">{metric.value}</span>
           </div>
         ))}
       </motion.div>

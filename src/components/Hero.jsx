@@ -35,7 +35,7 @@ export default function Hero() {
           custom={0}
           className="mb-6 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white/60"
         >
-          <Sparkles className="h-4 w-4 text-cyber" />
+          <Sparkles className="h-4 w-4 text-brand-magenta" />
           Future finance studio
         </motion.div>
         <motion.h1
@@ -43,7 +43,7 @@ export default function Hero() {
           custom={1}
           className="max-w-4xl font-display text-[2.75rem] leading-tight text-white/90 md:text-[4rem]"
         >
-          We build <span className="text-cyber">ultra-animated</span> fiscal
+          We build <span className="text-brand-magenta">ultra-animated</span> fiscal
           products that make complex taxes feel like interactive art.
         </motion.h1>
         <motion.p
@@ -64,7 +64,7 @@ export default function Hero() {
             href="#contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
-            className="rounded-full bg-cyber px-7 py-3 text-base font-semibold text-midnight shadow-glow"
+            className="rounded-full bg-brand-magenta px-7 py-3 text-base font-semibold text-midnight shadow-glow"
           >
             Book a motion audit
           </motion.a>
@@ -87,7 +87,7 @@ export default function Hero() {
             transition={{ delay: 0.6 + index * 0.08, duration: 0.7 }}
             className="glass-panel flex items-center gap-2 rounded-full px-5 py-2 backdrop-blur"
           >
-            <span className="h-1.5 w-1.5 rounded-full bg-cyber" />
+            <span className="h-1.5 w-1.5 rounded-full bg-brand-magenta" />
             {word}
           </motion.span>
         ))}

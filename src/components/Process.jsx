@@ -42,7 +42,7 @@ export default function Process() {
       </motion.div>
 
       <div className="relative">
-        <div className="absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-gradient-to-b from-cyber/0 via-cyber/60 to-transparent lg:block" />
+        <div className="absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-gradient-to-b from-brand-magenta/0 via-brand-magenta/60 to-transparent lg:block" />
         <div className="flex flex-col gap-12">
           {steps.map((step, index) => (
             <motion.article
@@ -53,7 +53,7 @@ export default function Process() {
               transition={{ duration: 0.8, delay: index * 0.05, ease: [0.16, 1, 0.3, 1] }}
               className={`glass-panel relative rounded-3xl p-8 lg:w-1/2 ${index % 2 === 0 ? 'lg:ml-auto lg:pl-16' : 'lg:mr-auto lg:pr-16'}`}
             >
-              <div className="pointer-events-none absolute -top-12 left-6 hidden h-24 w-24 -translate-x-1/2 rounded-full bg-cyber/30 blur-3xl lg:block" />
+              <div className="pointer-events-none absolute -top-12 left-6 hidden h-24 w-24 -translate-x-1/2 rounded-full bg-brand-magenta/30 blur-3xl lg:block" />
               <span className="text-sm font-semibold uppercase tracking-[0.4em] text-white/40">
                 {`0${index + 1}`}
               </span>

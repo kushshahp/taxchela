@@ -48,7 +48,7 @@ export default function SiteFooter() {
               <ul className="flex flex-col gap-2">
                 {group.items.map((item) => (
                   <li key={item}>
-                    <a href="#" className="transition-colors duration-300 hover:text-cyber">
+                    <a href="#" className="transition-colors duration-300 hover:text-brand-magenta">
                       {item}
                     </a>
                   </li>

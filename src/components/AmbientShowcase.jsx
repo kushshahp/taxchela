@@ -6,21 +6,21 @@ const experiences = [
     description:
       'Spectral timelines, orbiting KPI constellations, and ambient music layers that react to fiscal momentum in real time.',
     stat: '4.6M live datapoints',
-    accent: 'from-cyber/30 via-transparent to-accent/20',
+    accent: 'from-brand-magenta/30 via-transparent to-brand-purple/20',
   },
   {
     title: 'Holographic team rituals',
     description:
       'Weekly compliance standups staged as volumetric rituals with spatial audio cues and adaptive prompts for each region.',
     stat: '98% ritual adoption',
-    accent: 'from-indigo-400/30 via-transparent to-white/10',
+    accent: 'from-brand-indigo/30 via-transparent to-brand-iris/20',
   },
   {
     title: 'Mixed reality filings',
     description:
       'Physical spaces augmented with tax simulators, projection-mapped workflows, and tactile approvals synced to the cloud.',
     stat: '12 min global approvals',
-    accent: 'from-emerald-300/30 via-transparent to-amber-200/20',
+    accent: 'from-brand-purple/30 via-transparent to-brand-magenta/20',
   },
 ];
 
@@ -71,7 +71,7 @@ function ExperienceCard({ title, description, stat, accent, index }) {
 
       <motion.div
         style={{ rotateX, rotateY, x: translateX, y: translateY }}
-        className="relative flex h-full flex-col gap-6 overflow-hidden rounded-[32px] border border-white/10 bg-white/5 p-8 shadow-[0_40px_80px_-40px_rgba(113,250,202,0.45)] backdrop-blur-xl"
+        className="relative flex h-full flex-col gap-6 overflow-hidden rounded-[32px] border border-white/10 bg-white/5 p-8 shadow-[0_40px_80px_-40px_rgba(201,19,207,0.45)] backdrop-blur-xl"
       >
         <div className="flex items-center justify-between gap-4">
           <span className="text-xs font-semibold uppercase tracking-[0.4em] text-white/40">
@@ -80,7 +80,7 @@ function ExperienceCard({ title, description, stat, accent, index }) {
           <motion.span
             animate={{ opacity: [0.45, 0.8, 0.45] }}
             transition={{ repeat: Infinity, duration: 4, ease: 'easeInOut', delay: index * 0.5 }}
-            className="h-2 w-16 rounded-full bg-cyber/40"
+            className="h-2 w-16 rounded-full bg-brand-magenta/40"
           />
         </div>
 
@@ -99,7 +99,7 @@ function ExperienceCard({ title, description, stat, accent, index }) {
           <motion.span
             animate={{ y: [0, -4, 0] }}
             transition={{ repeat: Infinity, duration: 3.8, ease: 'easeInOut', delay: index * 0.4 }}
-            className="font-display text-lg text-cyber"
+            className="font-display text-lg text-brand-magenta"
           >
             {stat}
           </motion.span>

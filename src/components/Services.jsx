@@ -7,42 +7,42 @@ const services = [
     description:
       'Immersive discovery workshops translating fiscal complexity into experiential storyboards and motion grammar.',
     icon: Orbit,
-    accent: 'from-cyber/20 to-cyber/5',
+    accent: 'from-brand-magenta/25 via-transparent to-brand-purple/15',
   },
   {
     title: 'Interactive Compliance Systems',
     description:
       'Realtime dashboards, compliance co-pilots, and explainable AI flows crafted with cinematic feedback loops.',
     icon: Workflow,
-    accent: 'from-accent/20 to-accent/5',
+    accent: 'from-brand-purple/25 via-transparent to-brand-indigo/15',
   },
   {
     title: 'Adaptive Model Engineering',
     description:
       'Modular tax models, sandboxes, and scenario simulators engineered for multi-country teams and auditors.',
     icon: Layers,
-    accent: 'from-indigo-400/20 to-indigo-400/5',
+    accent: 'from-brand-indigo/25 via-transparent to-brand-magenta/10',
   },
   {
     title: 'Hyper-personal Content',
     description:
       'Automated narrative layers, voice & data synchronisation, and localized video explainers generated in minutes.',
     icon: Sparkles,
-    accent: 'from-amber-300/20 to-amber-300/5',
+    accent: 'from-brand-iris/25 via-transparent to-brand-purple/15',
   },
   {
     title: 'Global Rollouts',
     description:
       'Launch playbooks, training holograms, and compliance telemetry tuned for regional regulators and CX teams.',
     icon: Globe2,
-    accent: 'from-emerald-300/20 to-emerald-300/5',
+    accent: 'from-brand-purple/25 via-transparent to-brand-magenta/15',
   },
   {
     title: 'AI Partner Ecosystem',
     description:
       'APIs, partner integrations, and motion design systems that evolve with your AI policy frameworks.',
     icon: Cpu,
-    accent: 'from-sky-400/20 to-sky-400/5',
+    accent: 'from-brand-indigo/20 via-transparent to-brand-iris/15',
   },
 ];
 
@@ -108,7 +108,7 @@ export default function Services() {
             />
             <div className="flex items-center gap-4">
               <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10">
-                <Icon className="h-6 w-6 text-cyber" />
+                <Icon className="h-6 w-6 text-brand-magenta" />
               </span>
               <h3 className="font-display text-xl text-white">{title}</h3>
             </div>

@@ -9,7 +9,7 @@
 body {
   margin: 0;
   font-family: theme('fontFamily.sans');
-  background-color: #04030f;
+  background-color: #050112;
 }
 
 a {
@@ -22,8 +22,8 @@ a {
 }
 
 .glass-panel {
-  background: rgba(4, 3, 15, 0.35);
-  border: 1px solid rgba(113, 250, 202, 0.15);
+  background: rgba(5, 1, 18, 0.4);
+  border: 1px solid rgba(201, 19, 207, 0.14);
   backdrop-filter: blur(20px);
 }
 

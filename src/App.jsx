@@ -11,9 +11,24 @@ import SiteHeader from './components/SiteHeader.jsx';
 import SiteFooter from './components/SiteFooter.jsx';
 
 const parallaxLayers = [
-  { id: 'layer-1', blur: 'blur-3xl', opacity: 'opacity-70' },
-  { id: 'layer-2', blur: 'blur-[120px]', opacity: 'opacity-50' },
-  { id: 'layer-3', blur: 'blur-[160px]', opacity: 'opacity-40' },
+  {
+    id: 'layer-1',
+    blur: 'blur-3xl',
+    opacity: 'opacity-70',
+    gradient: 'from-brand-magenta/35 via-transparent to-brand-purple/25',
+  },
+  {
+    id: 'layer-2',
+    blur: 'blur-[120px]',
+    opacity: 'opacity-50',
+    gradient: 'from-brand-purple/30 via-transparent to-brand-indigo/25',
+  },
+  {
+    id: 'layer-3',
+    blur: 'blur-[160px]',
+    opacity: 'opacity-40',
+    gradient: 'from-brand-indigo/30 via-transparent to-brand-magenta/20',
+  },
 ];
 
 const orbitalVariant = {
@@ -52,7 +67,7 @@ export default function App() {
         {parallaxLayers.map((layer, index) => (
           <motion.div
             key={layer.id}
-            className={`absolute inset-10 rounded-full bg-gradient-to-br from-cyber/20 via-transparent to-accent/20 ${layer.blur} ${layer.opacity}`}
+            className={`absolute inset-10 rounded-full bg-gradient-to-br ${layer.gradient} ${layer.blur} ${layer.opacity}`}
             style={{
               scale: 1 + index * 0.1,
               y: layerTransforms[index],

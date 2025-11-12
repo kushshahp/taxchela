@@ -41,12 +41,12 @@ export default function ContactCta() {
           Share your roadmap and we’ll deliver a custom motion audit, pilot sprint plan, and investment breakdown in 72 hours.
         </motion.p>
         <motion.a
-          href="mailto:hello@taxchela.studio"
+          href="mailto:hello@taxchela.com"
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.96 }}
-          className="mt-4 inline-flex items-center justify-center rounded-full bg-cyber px-8 py-3 text-base font-semibold text-midnight"
+          className="mt-4 inline-flex items-center justify-center rounded-full bg-brand-magenta px-8 py-3 text-base font-semibold text-midnight"
         >
-          hello@taxchela.studio
+          hello@taxchela.com
         </motion.a>
       </motion.div>
 
@@ -55,14 +55,14 @@ export default function ContactCta() {
         initial={{ rotate: 0 }}
         animate={{ rotate: 360 }}
         transition={{ repeat: Infinity, duration: 40, ease: 'linear' }}
-        className="pointer-events-none absolute -left-32 top-1/2 h-64 w-64 -translate-y-1/2 rounded-full border border-dashed border-cyber/40"
+        className="pointer-events-none absolute -left-32 top-1/2 h-64 w-64 -translate-y-1/2 rounded-full border border-dashed border-brand-magenta/40"
       />
       <motion.div
         aria-hidden
         initial={{ rotate: 0 }}
         animate={{ rotate: -360 }}
         transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}
-        className="pointer-events-none absolute -right-16 top-10 h-40 w-40 rounded-full bg-accent/30 blur-3xl"
+        className="pointer-events-none absolute -right-16 top-10 h-40 w-40 rounded-full bg-brand-purple/30 blur-3xl"
       />
     </section>
   );
