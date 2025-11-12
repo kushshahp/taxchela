@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TaxChela | Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a href="/index.html" class="brand">
+          <div class="brand-logo hero-logo">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <defs>
+                <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#c913cf" />
+                  <stop offset="50%" stop-color="#522ae5" />
+                  <stop offset="100%" stop-color="#2433ee" />
+                </linearGradient>
+              </defs>
+              <path
+                fill="url(#logoGradient)"
+                d="M32 6c14.4 0 26 11.6 26 26S46.4 58 32 58 6 46.4 6 32 17.6 6 32 6zm0 9c-9.4 0-17 7.6-17 17s7.6 17 17 17 17-7.6 17-17S41.4 15 32 15zm0 9.6c4 0 7.4 3.4 7.4 7.4S36 39.4 32 39.4 24.6 36 24.6 32 28 24.6 32 24.6z"
+              />
+            </svg>
+          </div>
+          <span class="brand-wordmark">TaxChela</span>
+        </a>
+        <nav aria-label="Primary navigation">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+          <ul id="primary-nav" class="nav-links">
+            <li><a href="/home/index.html">Home</a></li>
+            <li><a class="active" href="/sol/index.html">Solutions</a></li>
+            <li><a href="/read/index.html">Insights</a></li>
+            <li><a href="/contri/index.html">Contribute</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero slim" data-animate="fade-up">
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <p class="eyebrow">Solutions catalogue</p>
+            <h1 class="hero-title">Composable pods for every compliance ritual</h1>
+            <p class="hero-subtitle">
+              Powered by automation, managed by experts. Our CSV-backed catalogue keeps your services versioned, filterable, and
+              ready for rapid deployments.
+            </p>
+            <a class="btn primary" href="#service-groups">Browse services</a>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="service-groups">
+        <div class="container">
+          <header class="section-header" data-animate="fade-up">
+            <h2>Service groups</h2>
+            <p>
+              Data-driven cards rendered from <code>/data/products.csv</code> and <code>/data/categories.csv</code>. Update the
+              CSVs to change this view without touching the markup.
+            </p>
+          </header>
+          <div id="service-groups-root" class="service-groups-root"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-wave"></div>
+      <div class="container footer-content">
+        <p>Need something custom? Write to <a href="mailto:hello@taxchela.com">hello@taxchela.com</a>.</p>
+        <nav>
+          <ul>
+            <li><a href="/pp/index.html">Privacy Policy</a></li>
+            <li><a href="/tc/index.html">Terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js" defer></script>
+    <script src="/js/script.js" defer></script>
+  </body>
+</html>
